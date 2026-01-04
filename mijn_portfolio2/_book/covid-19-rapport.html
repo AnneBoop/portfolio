@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="data-management.html"/>
-<link rel="next" href="bewijs-dat-het-werkt.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -183,8 +183,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="7.1" data-path="data-management.html"><a href="data-management.html#mapstructuur-rna-sequencing-formatieve-opdracht"><i class="fa fa-check"></i><b>7.1</b> Mapstructuur RNA-sequencing formatieve opdracht</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html"><i class="fa fa-check"></i><b>8</b> Covid 19 rapport</a></li>
-<li class="chapter" data-level="9" data-path="bewijs-dat-het-werkt.html"><a href="bewijs-dat-het-werkt.html"><i class="fa fa-check"></i><b>9</b> Bewijs dat het werkt:</a></li>
+<li class="chapter" data-level="8" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html"><i class="fa fa-check"></i><b>8</b> Covid 19 rapport</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html#bewijs-dat-het-werkt"><i class="fa fa-check"></i><b>8.1</b> Bewijs dat het werkt:</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -265,14 +267,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-7"><a href="covid-19-rapport.html#cb9-7" tabindex="-1"></a>) <span class="sc">+</span></span>
 <span id="cb9-8"><a href="covid-19-rapport.html#cb9-8" tabindex="-1"></a><span class="fu">theme_minimal</span>()</span></code></pre></div>
 <p><img src="_main_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div id="bewijs-dat-het-werkt" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Bewijs dat het werkt:<a href="covid-19-rapport.html#bewijs-dat-het-werkt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="covid-19-rapport.html#cb10-1" tabindex="-1"></a>covid_data <span class="ot">&lt;-</span> <span class="fu">process_covid_data</span>(</span>
+<span id="cb10-2"><a href="covid-19-rapport.html#cb10-2" tabindex="-1"></a>  <span class="at">country =</span> <span class="st">&quot;Netherlands&quot;</span>,</span>
+<span id="cb10-3"><a href="covid-19-rapport.html#cb10-3" tabindex="-1"></a>  <span class="at">years   =</span> <span class="dv">2020</span>,</span>
+<span id="cb10-4"><a href="covid-19-rapport.html#cb10-4" tabindex="-1"></a>  <span class="at">months  =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>)</span>
+<span id="cb10-5"><a href="covid-19-rapport.html#cb10-5" tabindex="-1"></a>)</span></code></pre></div>
+<div class="float">
+<img src="covid_cases_voorbeeld.png" alt="Voorbeeld van de grafiek van de cavid cases" />
+<div class="figcaption">Voorbeeld van de grafiek van de cavid cases</div>
+</div>
+<div class="float">
+<img src="covid_deaths_voorbeeld.png" alt="Voorbeeld van de grafiek van de cavid deaths" />
+<div class="figcaption">Voorbeeld van de grafiek van de cavid deaths</div>
+</div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-management.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="bewijs-dat-het-werkt.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-management.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

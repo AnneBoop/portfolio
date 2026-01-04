@@ -183,8 +183,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="7.1" data-path="data-management.html"><a href="data-management.html#mapstructuur-rna-sequencing-formatieve-opdracht"><i class="fa fa-check"></i><b>7.1</b> Mapstructuur RNA-sequencing formatieve opdracht</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html"><i class="fa fa-check"></i><b>8</b> Covid 19 rapport</a></li>
-<li class="chapter" data-level="9" data-path="bewijs-dat-het-werkt.html"><a href="bewijs-dat-het-werkt.html"><i class="fa fa-check"></i><b>9</b> Bewijs dat het werkt:</a></li>
+<li class="chapter" data-level="8" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html"><i class="fa fa-check"></i><b>8</b> Covid 19 rapport</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="covid-19-rapport.html"><a href="covid-19-rapport.html#bewijs-dat-het-werkt"><i class="fa fa-check"></i><b>8.1</b> Bewijs dat het werkt:</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -213,21 +215,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="data-inspecteren" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Data inspecteren<a href="c.elegans-plate-experiment.html#data-inspecteren" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <pre><code>## # A tibble: 6 × 34
-##   plateRow plateColumn vialNr dropCode expType    expReplicate expName    
-##   &lt;lgl&gt;    &lt;lgl&gt;        &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;             &lt;dbl&gt; &lt;chr&gt;      
-## 1 NA       NA               1 a        experiment            3 CE.LIQ.FLO…
-## 2 NA       NA               1 b        experiment            3 CE.LIQ.FLO…
-## 3 NA       NA               1 c        experiment            3 CE.LIQ.FLO…
-## 4 NA       NA               1 d        experiment            3 CE.LIQ.FLO…
-## 5 NA       NA               1 e        experiment            3 CE.LIQ.FLO…
-## 6 NA       NA               2 a        experiment            3 CE.LIQ.FLO…
-## # ℹ 27 more variables: expDate &lt;dttm&gt;, expResearcher &lt;chr&gt;,
-## #   expTime &lt;dbl&gt;, expUnit &lt;chr&gt;, expVolumeCounted &lt;dbl&gt;, RawData &lt;dbl&gt;,
-## #   compCASRN &lt;chr&gt;, compName &lt;chr&gt;, compConcentration &lt;chr&gt;,
-## #   compUnit &lt;chr&gt;, compDelivery &lt;chr&gt;, compVehicle &lt;chr&gt;,
-## #   elegansStrain &lt;chr&gt;, elegansInput &lt;dbl&gt;, bacterialStrain &lt;chr&gt;,
-## #   bacterialTreatment &lt;chr&gt;, bacterialOD600 &lt;dbl&gt;, bacterialConcX &lt;dbl&gt;,
-## #   bacterialVolume &lt;dbl&gt;, bacterialVolUnit &lt;chr&gt;, …</code></pre>
+##   plateRow plateColumn vialNr
+##   &lt;lgl&gt;    &lt;lgl&gt;        &lt;dbl&gt;
+## 1 NA       NA               1
+## 2 NA       NA               1
+## 3 NA       NA               1
+## 4 NA       NA               1
+## 5 NA       NA               1
+## 6 NA       NA               2
+## # ℹ 31 more variables:
+## #   dropCode &lt;chr&gt;,
+## #   expType &lt;chr&gt;,
+## #   expReplicate &lt;dbl&gt;,
+## #   expName &lt;chr&gt;,
+## #   expDate &lt;dttm&gt;,
+## #   expResearcher &lt;chr&gt;, …</code></pre>
 <p>De <code>RawData</code> is van data type double en <code>compName</code> en <code>compConcentration</code> zijn van data type character. <code>RawData</code> wordt gezien als type integer, deze moet dus omgezet worden. <code>compName</code> is goed als character en <code>compConcentration</code> moet als numerieke waarde.</p>
 </div>
 <div id="scatter-plot-voor-de-verschillende-chemicaliën-en-concentraties" class="section level2 hasAnchor" number="6.3">
