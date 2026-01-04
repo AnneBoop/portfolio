@@ -2,6 +2,8 @@
 
 Auteur: Anne Bakker
 datum: 04-01-2026
+
+
 Dit repository bevat mijn portfolio voor de cursus **Workflows** binnen de opleiding **Data Science for Biology**.  
 Het portfolio laat zien dat ik vaardigheden beheers op het gebied van data-analyse, data management, reproducible science, SQL, R packages en het werken met Rmarkdown en bookdown.
 
