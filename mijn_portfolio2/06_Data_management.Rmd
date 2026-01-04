@@ -1,0 +1,9 @@
+---
+output: html_document
+---
+# Data management
+## Mapstructuur RNA-sequencing formatieve opdracht
+
+Hierbij een screenshot van de mapstructuur van de RNA-sequencing formatieve opdracht van de DAUR2 module na het toepassen van de Guerilla Analytics. De mapstructuur is verkregen doormiddel van de `dir_tree` functie.
+
+![Mapstructuur van de formatieve opdracht binnen daur2 met de guerilla analytics toegepast](mapstructuur_daur2.png)

@@ -1,0 +1,12 @@
+---
+author: "Anne Bakker"
+date: "2023-12-11"
+output: html_document
+---
+
+# CV in pdf
+
+```{r pdf inlezen, echo=FALSE, out.height=400, out.width=800}
+knitr::include_graphics("02_CV.pdf")
+```
+
