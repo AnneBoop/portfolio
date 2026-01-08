@@ -90,3 +90,15 @@ y = "Aantal sterfgevallen"
 theme_minimal()
 ```
 
+## Bewijs dat het werkt:
+```{r eval=FALSE, echo=TRUE}
+covid_data <- process_covid_data(
+  country = "Netherlands",
+  years   = 2020,
+  months  = c(10, 11, 12)
+)
+```
+
+![Voorbeeld van de grafiek van de cavid cases](covid_cases_voorbeeld.png)
+
+![Voorbeeld van de grafiek van de cavid deaths](covid_deaths_voorbeeld.png)
