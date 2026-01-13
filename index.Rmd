@@ -1,0 +1,10 @@
+---
+title: "Mijn portfolio"
+author: "Anne Bakker"
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Introductie
+
+Dit is mijn portfolio bookdown.

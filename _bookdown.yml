@@ -1,0 +1,13 @@
+book_filename: "portfolio"
+output_dir: "docs"
+delete_merged_file: true
+rmd_files:
+  - index.Rmd
+  - 01-CV.Rmd
+  - 02-CV.Rmd
+  - 03-Toekomstplan.Rmd
+  - 05-data_management.Rmd
+  - 06-c.elegans.Rmd
+  - 07-PeerReview.Rmd
+  - 09-bronvermelding.Rmd
+  - 10-covid_report.Rmd
