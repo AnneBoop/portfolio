@@ -22,6 +22,8 @@ library(ggplot2)
 library(httr)
 ```
 
+# COVID-19 rapport
+
 ```{r eval=FALSE, include=TRUE}
 process_covid_data <- function(country, years, months) {
 
