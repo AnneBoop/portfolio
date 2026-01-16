@@ -10,5 +10,5 @@ Antimicrobiële resistentie (AMR) vormt een ernstig wereldwijd gezondheidsproble
 
 Het classificeren van plasmiden op basis van replicon- of mobiliteitstypen helpt bij het begrijpen van hun rol in multidrug‑resistentie [@Robertson2023]. Bioinformatica‑pijplijnen kunnen grote genomische datasets analyseren, plasmiden reconstrueren en resistentiegenen detecteren, wat cruciaal is voor onderzoek en infectiecontrole [@Zhang2023].
 
-# Referenties
+## Referenties
 
