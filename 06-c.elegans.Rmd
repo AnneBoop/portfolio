@@ -11,11 +11,11 @@ output: html_document
 #install.packages("tidyverse")
 library(tidyverse)
 library(readxl)
-C.elegans_data <- read_excel("CE.LIQ.FLOW.062_Tidydata.xlsx")
+C.elegans_data <- read_excel("data/raw/CE.LIQ.FLOW.062_Tidydata.xlsx")
 
 ```
 
-## **Data inspecteren**
+## Data inspecteren
 
 ```{r data inspecteren, echo=FALSE, warning=FALSE}
 head(C.elegans_data)
@@ -28,7 +28,7 @@ C.elegans_data$RawData <- as.integer(C.elegans_data$RawData)
 C.elegans_data$compConcentration <- as.numeric(C.elegans_data$compConcentration)
 ```
 
-## **Scatter plot voor de verschillende chemicaliën en concentraties**
+## Scatter plot voor de verschillende chemicaliën en concentraties
 
 
 ```{r scatterplot, echo=FALSE, warning=FALSE}
@@ -37,7 +37,7 @@ library(ggplot2)
 ggplot(C.elegans_data, aes(x = compConcentration, y = RawData, color=compName, shape=expType)) + geom_point(position = position_jitter(width = 0.1, height = 0), alpha = 0.6) + scale_x_log10() + labs(title = "Getelde nakomelingen na bepaalde \n concentratie compound toediening", x = "compConcentration (log10)", y = "Getelde nakomelingen na incubatie", color = "compName") + theme_minimal()
 ```
 
-## **Normaliseren van de data voor de negatieve controle**
+## Normaliseren van de data voor de negatieve controle
 
 
 ```{r normalised scatterplot, echo=FALSE, warning=FALSE}
@@ -50,7 +50,7 @@ ggplot(C.elegans_data, aes(x = compConcentration, y = RawData_normalized, color 
 ```
 
 
-## **Analyse**
+## Analyse
 
 
 In dit experiment is de negatieve controle S-medium. De positieve controle voor dit experiment is ethanol. 
@@ -65,7 +65,7 @@ Zoals eerder al besproken bij het belang van de negatieve controle is het normal
 
 
 
-## **Analyse plan**
+## Analyse plan
 
 **Stap 1: Data-inspectie**
 
